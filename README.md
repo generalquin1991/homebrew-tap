@@ -5,10 +5,11 @@ Custom Homebrew formulae by generalquin1991.
 ## Available formulae
 
 - **holdcom** — on-demand serial take-over that never resets the MCU (picocom-like).
-  Install:
+  Install (on brew 4.x a third-party tap must be trusted first):
 
   ```bash
   brew tap generalquin1991/tap
+  brew trust generalquin1991/tap   # required once; otherwise sandbox_apply fails
   brew install holdcom
   ```
 
