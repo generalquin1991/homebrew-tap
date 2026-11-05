@@ -1,18 +1,17 @@
-# Generalquin1991 Tap
+# homebrew-tap
 
-## How do I install these formulae?
+Custom Homebrew formulae by generalquin1991.
 
-`brew install generalquin1991/tap/<formula>`
+## Available formulae
 
-Or `brew tap generalquin1991/tap` and then `brew install <formula>`.
+- **holdcom** — on-demand serial take-over that never resets the MCU (picocom-like).
+  Install:
 
-Or, in a `brew bundle` `Brewfile`:
+  ```bash
+  brew tap generalquin1991/tap
+  brew install holdcom
+  ```
 
-```ruby
-tap "generalquin1991/tap"
-brew "<formula>"
-```
-
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+  `holdcom` is a pure-stdlib Python script; it runs with whatever `python3`
+  is already on your PATH (macOS built-in, Homebrew, or user-installed) — no
+  separate Python interpreter is pulled in.
